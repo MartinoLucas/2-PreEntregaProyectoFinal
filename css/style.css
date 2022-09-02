@@ -49,6 +49,8 @@ ul li{
 
 /*MAIN*/
 
+
+
 .bg-main{
 	background-image: url(../img/pasto.jpg);
 }
@@ -59,10 +61,6 @@ h1{
 	background-color: #7bc5c1;
 	text-align: center;
 	border: solid 3px #cfc5c1;
-}
-
-.img-cetr{
-	text-align: center;
 }
 
 .p-main{
@@ -91,24 +89,8 @@ h1{
 /*GRIDS*/
 /*GRID BODY*/
 .gridBody{
-	display: grid;
-	grid-template-columns: 100%;
-	grid-template-rows: auto auto auto;
-	grid-template-areas:
-		"Header"
-		"Main"
-		"Foot";
-	/*min-height: 100vh;*/
-}
-
-.gridH{
-	grid-area: Header;
-}
-.gridM{
-	grid-area: Main;
-}
-.gridF{
-	grid-area: Foot;
+	display: flex;
+	flex-direction: column;
 }
 
 /*GRID HEADER*/
@@ -130,51 +112,44 @@ h1{
 
 /*GRID MAIN*/
 
-.gridsMain{
-	display: grid;
-	grid-template-columns: auto auto;
-	grid-template-rows: auto auto;
-	grid-template-areas: 
-	"title title"
-	"img lorem";
+.mainIndex{
+	display: flex;
+	flex-direction: column;
 }
 
-.gridTitle{
-	grid-area: title;
+.contentMain{
+	display: inline-flex;
 }
+
 .gridImg{
+	min-width: 35vw;
+	max-width: 40%;
 	margin: 10px;
-	grid-area: img;
+	/*grid-area: img;*/
 }
+
 .gridP{
+	padding: 15px;
 	margin: 10px;
-	grid-area: lorem;
+	/*grid-area: lorem;*/
 }
 
 /*GRID FOOT*/
-
 .gridsFoot{
-	display: grid;
-	grid-template-columns: 100%;
-	grid-template-rows: auto auto auto;
-	grid-template-areas:
-	"logo"
-	"locacion"
-	"copy";
+	display: flex;
+	flex-direction: column;
 	background: linear-gradient(#7bc5c1 50%, #eab875);
-
+	min-height: 100%;
+	justify-content: space-evenly;
 }
 
 .gridLogoF{
-	grid-area: logo;
 	padding: 5px;
 }
 .gridLocacion{
-	grid-area: locacion;
 	padding: 9px;
 }
 .gridCopy{
-	grid-area: copy;
 	padding: 9px;
 }
 
