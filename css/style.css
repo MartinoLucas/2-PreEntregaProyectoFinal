@@ -205,32 +205,25 @@ h1{
 }
 
 .gridMainP{
-	display: grid;
-	grid-template-columns: 100%;
-	grid-template-rows: auto auto auto;
-	grid-template-areas:
-	"titlePr"
-	"links"
-	"prs";
+	display: flex;
+	flex-direction: column;
 	background-image: url(../img/pasto.jpg);
-}
-.h1Pr{
-	grid-area: titlePr;
 }
 .linksPr{
 	text-align: center;
-	grid-area: links;
+	/*grid-area: links;*/
 	opacity: 1;
 	animation-name: vanishing;
 	animation-iteration-count: 4;
 	animation-duration: .5s;
 }
 .prs{
-	grid-area: prs;
+	/*grid-area: prs;*/
 	display: flex;
 	flex-wrap: 	wrap;
 	justify-content: space-evenly;
 }
+
 .prs li ul{
 	text-align: center;
 }
