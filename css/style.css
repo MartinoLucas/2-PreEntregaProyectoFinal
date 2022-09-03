@@ -60,7 +60,9 @@ h1{
 	padding: 15px;
 	background-color: #7bc5c1;
 	text-align: center;
-	border: solid 3px #cfc5c1;
+	border-right: solid 3px #cfc5c1;
+	border-left: solid 3px #cfc5c1;
+	border-bottom: solid 3px #cfc5c1;
 }
 
 .p-main{
@@ -94,6 +96,13 @@ h1{
 }
 
 /*GRID HEADER*/
+.gridH{
+	box-shadow: 2px 7px 7px 1px rgba(0,0,0,0.49);
+	-webkit-box-shadow: 2px 7px 7px 1px rgba(0,0,0,0.49);
+	-moz-box-shadow: 2px 7px 7px 1px rgba(0,0,0,0.49);
+	z-index: 1;
+}
+
 .gridsHeader{
 	display: grid;
 	grid-template-columns: 20% 80%;
@@ -136,6 +145,13 @@ h1{
 }
 
 /*GRID FOOT*/
+.gridF{
+	z-index: 1;
+	box-shadow: 2px 7px 7px 0px rgba(0,0,0,0.42) inset;
+	-webkit-box-shadow: 2px 7px 7px 0px rgba(0,0,0,0.42) inset;
+	-moz-box-shadow: 2px 7px 7px 0px rgba(0,0,0,0.42) inset;
+}
+
 .gridsFoot{
 	display: flex;
 	flex-direction: column;
@@ -161,6 +177,7 @@ h1{
 }
 
 .gridsMainNos{
+	text-align: center;
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-template-rows: auto auto auto auto;
@@ -228,6 +245,10 @@ h1{
 	text-align: center;
 }
 .enlaces h3{
+	text-decoration: none;
+}
+.enlaces h3:hover{
+	color: #7bc5c1;
 	text-decoration: underline;
 }
 .prs img{
@@ -235,11 +256,13 @@ h1{
 }
 
 /*CONTACTO*/
+
 .gridMCt{
 	min-height: 80vh;
 	background-image: url(../img/pasto.jpg);
 }
 .formCt{
+	border-radius: 20px;
 	margin-top: 15px;
 	margin-left: 15px;
 	margin-right: 15px;
@@ -253,6 +276,7 @@ h1{
 	text-align: center;
 }
 .subtitleCt{
+	border-radius: 20px;
 	padding: 15px;
 	margin: 10px;
 	background-color: #eab875;
