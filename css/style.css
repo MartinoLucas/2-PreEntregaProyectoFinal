@@ -27,6 +27,12 @@ header{
 .logo{
 	margin: 15px;
 }
+.logo a img{
+	transition: transform .2s;
+}
+.logo a img:hover{
+	transform: scale(1.15);
+}
 
 .nav{
 	text-align: right;
@@ -37,7 +43,7 @@ header{
 	transition: transform .3s;
 }
 .nav ul li:hover{
-	transform: translate(0, -5px);
+	transform: translate(0, -3px);
 }
 
 ul li{
@@ -203,6 +209,7 @@ h1{
 	background-color: #eab875;
 }
 .gridLoremNos{
+	font-size: 20px;
 	margin: 5px;
 	padding: 5px;
 	grid-area: loremN;
