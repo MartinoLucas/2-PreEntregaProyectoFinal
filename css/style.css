@@ -27,6 +27,12 @@ header{
 .logo{
 	margin: 15px;
 }
+.logo a img{
+	transition: transform .2s;
+}
+.logo a img:hover{
+	transform: scale(1.15);
+}
 
 .nav{
 	text-align: right;
@@ -37,7 +43,7 @@ header{
 	transition: transform .3s;
 }
 .nav ul li:hover{
-	transform: translate(0, -5px);
+	transform: translate(0, -3px);
 }
 
 ul li{
@@ -60,7 +66,13 @@ h1{
 	padding: 15px;
 	background-color: #7bc5c1;
 	text-align: center;
+<<<<<<< HEAD
 	border: solid 3px #cfc5c1;
+=======
+	border-right: solid 3px #cfc5c1;
+	border-left: solid 3px #cfc5c1;
+	border-bottom: solid 3px #cfc5c1;
+>>>>>>> cssEficiente
 }
 
 .p-main{
@@ -94,6 +106,13 @@ h1{
 }
 
 /*GRID HEADER*/
+.gridH{
+	box-shadow: 2px 7px 7px 1px rgba(0,0,0,0.49);
+	-webkit-box-shadow: 2px 7px 7px 1px rgba(0,0,0,0.49);
+	-moz-box-shadow: 2px 7px 7px 1px rgba(0,0,0,0.49);
+	z-index: 1;
+}
+
 .gridsHeader{
 	display: grid;
 	grid-template-columns: 20% 80%;
@@ -113,6 +132,10 @@ h1{
 /*GRID MAIN*/
 
 .mainIndex{
+<<<<<<< HEAD
+=======
+	min-height: 100vh;
+>>>>>>> cssEficiente
 	display: flex;
 	flex-direction: column;
 }
@@ -122,6 +145,7 @@ h1{
 }
 
 .gridImg{
+<<<<<<< HEAD
 	min-width: 35vw;
 	max-width: 40%;
 	margin: 10px;
@@ -135,6 +159,28 @@ h1{
 }
 
 /*GRID FOOT*/
+=======
+	max-width: 500px;
+	max-height: 334px;
+	margin: 10px;
+}
+
+.gridP{
+	text-align: justify;
+	font-size: 18px;
+	padding: 15px;
+	margin: 10px;
+}
+
+/*GRID FOOT*/
+.gridF{
+	z-index: 1;
+	box-shadow: 2px 7px 7px 0px rgba(0,0,0,0.42) inset;
+	-webkit-box-shadow: 2px 7px 7px 0px rgba(0,0,0,0.42) inset;
+	-moz-box-shadow: 2px 7px 7px 0px rgba(0,0,0,0.42) inset;
+}
+
+>>>>>>> cssEficiente
 .gridsFoot{
 	display: flex;
 	flex-direction: column;
@@ -154,8 +200,13 @@ h1{
 }
 
 /*NOSOTROS*/
-.gridsMainNos{
+.mainNos{
+	min-height: 100vh;
 	background-image: url(../img/pasto.jpg);
+}
+
+.gridsMainNos{
+	text-align: center;
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-template-rows: auto auto auto auto;
@@ -181,6 +232,7 @@ h1{
 	background-color: #eab875;
 }
 .gridLoremNos{
+	font-size: 20px;
 	margin: 5px;
 	padding: 5px;
 	grid-area: loremN;
@@ -200,36 +252,33 @@ h1{
 }
 
 .gridMainP{
-	display: grid;
-	grid-template-columns: 100%;
-	grid-template-rows: auto auto auto;
-	grid-template-areas:
-	"titlePr"
-	"links"
-	"prs";
+	display: flex;
+	flex-direction: column;
 	background-image: url(../img/pasto.jpg);
-}
-.h1Pr{
-	grid-area: titlePr;
 }
 .linksPr{
 	text-align: center;
-	grid-area: links;
+	/*grid-area: links;*/
 	opacity: 1;
 	animation-name: vanishing;
 	animation-iteration-count: 4;
 	animation-duration: .5s;
 }
 .prs{
-	grid-area: prs;
+	/*grid-area: prs;*/
 	display: flex;
 	flex-wrap: 	wrap;
 	justify-content: space-evenly;
 }
+
 .prs li ul{
 	text-align: center;
 }
 .enlaces h3{
+	text-decoration: none;
+}
+.enlaces h3:hover{
+	color: #7bc5c1;
 	text-decoration: underline;
 }
 .prs img{
@@ -237,10 +286,13 @@ h1{
 }
 
 /*CONTACTO*/
+
 .gridMCt{
+	min-height: 80vh;
 	background-image: url(../img/pasto.jpg);
 }
 .formCt{
+	border-radius: 20px;
 	margin-top: 15px;
 	margin-left: 15px;
 	margin-right: 15px;
@@ -254,12 +306,15 @@ h1{
 	text-align: center;
 }
 .subtitleCt{
+	border-radius: 20px;
+	padding: 15px;
 	margin: 10px;
 	background-color: #eab875;
 }
 
 /*CORPORATIVO*/
 .gridsMCr{
+	min-height: 100vh;
 	text-align: center;
 	background-image: url(../img/pasto.jpg);
 }
@@ -268,6 +323,10 @@ h1{
 }
 .divMCr p{
 	padding: 10px;
+}
+.iframeMain{
+	width: 700;
+	margin: 40px;
 }
 
 /*MEDIAQUERIES*/
@@ -296,28 +355,9 @@ h1{
 
 	/*GRID MAIN*/
 
-	.gridsMain{
-		display: grid;
-		grid-template-columns: 100%;
-		grid-template-rows: auto auto auto;
-		grid-template-areas: 
-		"title"
-		"img"
-		"lorem";
-	}
-
-	.gridTitle{
-		grid-area: title;
-	}
-	.gridImg{
-		width: 95%;
-		height: auto;
-		grid-area: img;
-	}	
-	.gridP{
-		padding: 15px;
-		margin: 10px;
-		grid-area: lorem;
+	.contentMain{
+		display: flex;
+		flex-direction: column;
 	}
 
 	/*MAIN NOSOTROS*/
