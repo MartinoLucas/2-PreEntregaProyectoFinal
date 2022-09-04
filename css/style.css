@@ -132,10 +132,7 @@ h1{
 /*GRID MAIN*/
 
 .mainIndex{
-<<<<<<< HEAD
-=======
 	min-height: 100vh;
->>>>>>> cssEficiente
 	display: flex;
 	flex-direction: column;
 }
@@ -145,7 +142,6 @@ h1{
 }
 
 .gridImg{
-<<<<<<< HEAD
 	min-width: 35vw;
 	max-width: 40%;
 	margin: 10px;
@@ -159,7 +155,7 @@ h1{
 }
 
 /*GRID FOOT*/
-=======
+gridF{
 	max-width: 500px;
 	max-height: 334px;
 	margin: 10px;
@@ -180,11 +176,10 @@ h1{
 	-moz-box-shadow: 2px 7px 7px 0px rgba(0,0,0,0.42) inset;
 }
 
->>>>>>> cssEficiente
 .gridsFoot{
 	display: flex;
 	flex-direction: column;
-	background: linear-gradient(#7bc5c1 50%, #eab875);
+	background: linear-gradient(#7bc5c1, #eab875);
 	min-height: 100%;
 	justify-content: space-evenly;
 }
